@@ -1,12 +1,12 @@
 <a href="https://flask-testing.readthedocs.io/en/latest/">
-<img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg" alt="PythonSample" />
+<img src="https://media.giphy.com/media/kvjrG7mRLiWm4/giphy.gif" alt="PythonSample" />
 </a>
 
 # PythonSample
 
-##Steps to run the project
+## Steps to run the project
 
-###On MacOS
+### On MacOS
 
 1. Clone the project
 2. Open in [PyCharm](https://www.jetbrains.com/pycharm/download/#section=mac) or [Sublime](https://www.sublimetext.com/3)
