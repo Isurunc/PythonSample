@@ -21,6 +21,7 @@ def login_required(f):
         else:
             flash('You need to login first.')
             return redirect(url_for('login'))
+
     return wrap
 
 
@@ -28,7 +29,6 @@ def login_required(f):
 @app.route('/')
 @login_required
 def home():
-
     g.db = connect_db()
     cur = g.db.execute('select * from sampleTable')
 

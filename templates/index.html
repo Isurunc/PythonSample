@@ -22,19 +22,20 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
 </style>
 <table>
-  <tr>
-    <th><strong>ID</strong></th>
-    <th><strong>Value</strong></th>
-  </tr>
-{% for sample in samples %}
-  <tr>
-    <td>{{ sample.id }}</td>
-    <td>{{ sample.value }}</td>
-  </tr>
-<br>
-{% endfor %}
+    <tr>
+        <th><strong>ID</strong></th>
+        <th><strong>Value</strong></th>
+    </tr>
+    {% for sample in samples %}
+    <tr>
+        <td>{{ sample.id }}</td>
+        <td>{{ sample.value }}</td>
+    </tr>
+    <br>
+    {% endfor %}
 </table>
 
 {% endblock %}
