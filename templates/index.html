@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 style="text-align:center;">Welcome to Python Unit test Demo</h1>
+<br>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<br>
+<h3>Sample Table Values:</h3>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<table>
+  <tr>
+    <th><strong>ID</strong></th>
+    <th><strong>Value</strong></th>
+  </tr>
+{% for sample in samples %}
+  <tr>
+    <td>{{ sample.id }}</td>
+    <td>{{ sample.value }}</td>
+  </tr>
+<br>
+{% endfor %}
+</table>
+
+{% endblock %}
